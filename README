@@ -1,0 +1,25 @@
+
+Small compilation of the most commonly used boost headers for use with C++ applications that wish to use some convenient boost features without introducing boost as dependency.
+
+Some of the headers are in fact from boost, others are workarounds / re-implementations written by me that may not in all aspects be compliant to the original headers. I've been using them for years in various projects, however, and never experienced any serious flaws.
+
+The collection currently contains: 
+ - tuple (up to 5 elements)
+ - shared_ptr (not threadsafe)
+ - shared_array
+ - foreach (limited version)
+ - format (pipes to a stringstream)
+ - lexical_cast (uses stringstream)
+ - make_shared (dummy, does not do a compact alloc)
+ - noncopyable
+ - pointer_cast
+ - static_assert
+ - timer 
+ - math/common_factor (lcm,gcd)
+ 
+
+Originally, this collection evolved as part of assimp (http://assimp.sf.net). During development we had  realize that boost is not as common as we thought it was and many users would screw assimp for its dependency on boost. Maintaining a small collection of boost 'workaround' scripts turned out to be a very easy solution to the problem.
+
+
+Feel free to contribute more headers, everything is welcome as long as the collection doesn't get as huge as boost itself.
+
