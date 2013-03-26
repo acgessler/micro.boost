@@ -1,7 +1,6 @@
+Lightweight collection of the most commonly used boost headers. Access convenient boost utilities, such as smart pointers or tuples, without introducing boost as dependency.
 
-Small compilation of the most commonly used boost headers for use with C++ applications that wish to use some convenient boost features without introducing boost as dependency.
-
-Some of the headers are in fact from boost, others are workarounds / re-implementations written by me that may not in all aspects be compliant to the original headers. I've been using them for years in various projects, however, and never experienced any serious flaws.
+Some of the headers are directly from boost; others are workarounds or have been reimplemented by me. These may not be fully compliant with the original headers.
 
 The collection currently contains: 
  - tuple (up to 5 elements)
@@ -18,8 +17,5 @@ The collection currently contains:
  - math/common_factor (lcm,gcd)
  
 
-Originally, this collection evolved as part of assimp (http://assimp.sf.net). During development we had  realize that boost is not as common as we thought it was and many users would screw assimp for its dependency on boost. Maintaining a small collection of boost 'workaround' scripts turned out to be a very easy solution to the problem.
-
-
-Feel free to contribute more headers, everything is welcome as long as the collection doesn't get as huge as boost itself.
+Originally, this collection evolved as part of assimp (http://assimp.sf.net). During development, we realized that boost is not as widespread as we believed, and therefore some users might avoid assimp because of this dependency on boost. Maintaining a small collection of boost 'workaround' scripts turned out to be an easy solution.
 
